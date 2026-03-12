@@ -10,241 +10,291 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="social-sidebar">
-        <a href="https://github.com/MohFarrah" target="_blank" class="social-link">
-            <img src="Icons/github.png" alt="GitHub" class="social-icon">
-        </a>
-        <a href="https://www.linkedin.com/in/mohammadfarrah/" target="_blank" class="social-link">
-            <img src="Icons/linkedin.png" alt="LinkedIn" class="social-icon">
-        </a>
+    <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">Dark</button>
+    <div class="page-shell">
+        <main class="grid-layout">
+            <div class="layout-row">
+            <div class="layout-left">
+                <header class="site-header">
+                    <div class="header-row-1">
+                        <div class="avatar-wrapper">
+                            <img src="PImags/pfp.jpeg" alt="Mohammad Farrah" class="avatar">
+                        </div>
+                        <div class="header-name-role">
+                            <h1 class="name">Mohammad Farrah</h1>
+                            <p class="role">Software Engineer</p>
+                        </div>
+                    </div>
+                    <div class="header-row-2">
+                        <h3 class="header-about-label">About</h3>
+                        <p class="about-blurb">
+                            I’m a software engineer and AI generalist studying Computer Science at the University of Washington.
+                            I like building practical, human‑centred products from no‑code app builders and internal tools
+                            to applied ML systems that turn research ideas into working software.
+                        </p>
+                    </div>
+                </header>
+                <section class="card projects-card">
+                    <h3>Projects</h3>
+                    <ul class="timeline-list project-timeline">
+                        <li>
+                            <div class="badge-year">2025</div>
+                            <div class="timeline-body">
+                                <p class="timeline-title"><a href="https://github.com/MohFarrah/SalamHack" class="inline-link" target="_blank">Medical AI Assistant</a></p>
+                                <p class="timeline-meta">Hackathon · Top 15 of 200+ teams</p>
+                                <p class="timeline-text">Full‑stack AI assistant that collects patient symptoms and automates doctor handoff.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="badge-year">—</div>
+                            <div class="timeline-body">
+                                <p class="timeline-title"><a href="https://beitalcode.com/" class="inline-link" target="_blank">Beit‑Al‑Code</a></p>
+                                <p class="timeline-meta">Live course store</p>
+                                <p class="timeline-text">Full‑stack store for web development courses with real payments.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="badge-year">—</div>
+                            <div class="timeline-body">
+                                <p class="timeline-title"><a href="https://github.com/MohFarrah/Dungeon-Adventure" class="inline-link" target="_blank">Dungeon Adventure</a></p>
+                                <p class="timeline-meta">University team project</p>
+                                <p class="timeline-text">Python dungeon crawler with PyGame and SQLite.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="badge-year">—</div>
+                            <div class="timeline-body">
+                                <p class="timeline-title"><a href="https://github.com/MohFarrah/Chess" class="inline-link" target="_blank">Chess</a></p>
+                                <p class="timeline-meta">College team project</p>
+                                <p class="timeline-text">Two‑player chess game implemented in Java.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="layout-right">
+            <section class="card experience-card">
+                <h3>Experience</h3>
+                <ul class="timeline-list">
+                    <li>
+                        <div class="badge-year badge-year--current">Present</div>
+                        <div class="timeline-body">
+                            <p class="timeline-title">AI Trainer</p>
+                            <p class="timeline-meta">Handshake AI</p>
+                            <p class="timeline-text">Remote</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="badge-year badge-year--current">Present</div>
+                        <div class="timeline-body">
+                            <p class="timeline-title">Project Manager</p>
+                            <p class="timeline-meta">DemaDose</p>
+                            <p class="timeline-text">Remote</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="badge-year badge-year--current">Present</div>
+                        <div class="timeline-body">
+                            <p class="timeline-title">Full Stack Engineer</p>
+                            <p class="timeline-meta">DemaDose</p>
+                            <p class="timeline-text">Remote</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="badge-year">2025</div>
+                        <div class="timeline-body">
+                            <p class="timeline-title">Research and Development</p>
+                            <p class="timeline-meta">University of Washington</p>
+                            <p class="timeline-text">Tacoma, WA</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="badge-year">2024</div>
+                        <div class="timeline-body">
+                            <p class="timeline-title">Software Development Engineer Intern</p>
+                            <p class="timeline-meta">DemaDose</p>
+                            <p class="timeline-text">Remote</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="badge-year">2024</div>
+                        <div class="timeline-body">
+                            <p class="timeline-title">Software Development Engineer Intern</p>
+                            <p class="timeline-meta">Exchvnge</p>
+                            <p class="timeline-text">Remote</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="badge-year">2022</div>
+                        <div class="timeline-body">
+                            <p class="timeline-title">Computer Science Teaching Assistant</p>
+                            <p class="timeline-meta">Tacoma Community College</p>
+                            <p class="timeline-text">Tacoma, WA</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="card skills-card">
+                <h3>Stack</h3>
+                <div class="skills-grid">
+                    <span class="pill-tag">Java</span>
+                    <span class="pill-tag">Python</span>
+                    <span class="pill-tag">JavaScript</span>
+                    <span class="pill-tag">TypeScript</span>
+                    <span class="pill-tag">SQL</span>
+                    <span class="pill-tag">React</span>
+                    <span class="pill-tag">Next.js</span>
+                    <span class="pill-tag">React Native</span>
+                    <span class="pill-tag">Node.js</span>
+                    <span class="pill-tag">PostgreSQL</span>
+                    <span class="pill-tag">Supabase</span>
+                    <span class="pill-tag">Firebase</span>
+                    <span class="pill-tag">AWS</span>
+                    <span class="pill-tag">Docker</span>
+                    <span class="pill-tag">GitHub Actions</span>
+                </div>
+            </section>
+
+            </div>
+            </div>
+
+            <section class="card highlights-card highlights-card--full">
+                <h3>Highlights</h3>
+                <div class="work-cards">
+                    <a href="https://github.com/MohFarrah/SalamHack" target="_blank" rel="noopener" class="work-card">
+                        <div class="work-card-header">
+                            <div class="work-card-meta">
+                                <div class="work-card-logo" aria-hidden="true">M</div>
+                                <div>
+                                    <h4 class="work-card-title">Medical AI Assistant</h4>
+                                    <p class="work-card-desc">Full‑stack AI assistant that collects patient symptoms and automates doctor handoff. Top 15 of 200+ hackathon teams.</p>
+                                </div>
+                            </div>
+                            <span class="work-card-arrow" aria-hidden="true"><img src="Icons/Arrow up-right.png" alt=""></span>
+                        </div>
+                        <div class="work-card-images">
+                            <img src="PImags/SalamHack.png" alt="Medical AI Assistant">
+                        </div>
+                    </a>
+                    <a href="https://beitalcode.com/" target="_blank" rel="noopener" class="work-card">
+                        <div class="work-card-header">
+                            <div class="work-card-meta">
+                                <div class="work-card-logo" aria-hidden="true">B</div>
+                                <div>
+                                    <h4 class="work-card-title">Beit‑Al‑Code</h4>
+                                    <p class="work-card-desc">Full‑stack course store for web development with real payments.</p>
+                                </div>
+                            </div>
+                            <span class="work-card-arrow" aria-hidden="true"><img src="Icons/Arrow up-right.png" alt=""></span>
+                        </div>
+                        <div class="work-card-images">
+                            <img src="PImags/BeitAlCode.png" alt="Beit‑Al‑Code">
+                        </div>
+                    </a>
+                    <a href="https://github.com/MohFarrah/Dungeon-Adventure" target="_blank" rel="noopener" class="work-card">
+                        <div class="work-card-header">
+                            <div class="work-card-meta">
+                                <div class="work-card-logo" aria-hidden="true">D</div>
+                                <div>
+                                    <h4 class="work-card-title">Dungeon Adventure</h4>
+                                    <p class="work-card-desc">Python dungeon crawler with PyGame and SQLite. University team project.</p>
+                                </div>
+                            </div>
+                            <span class="work-card-arrow" aria-hidden="true"><img src="Icons/Arrow up-right.png" alt=""></span>
+                        </div>
+                        <div class="work-card-images">
+                            <img src="PImags/DungeonAdventure.png" alt="Dungeon Adventure">
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="card contact-card">
+                <h3>Contact</h3>
+                <div class="contact-grid">
+                    <div>
+                        <p class="list-title">Email</p>
+                        <a href="mailto:mohfarrah04@gmail.com" class="inline-link">Say hello →</a>
+                    </div>
+                    <div>
+                        <p class="list-title">GitHub</p>
+                        <a href="https://github.com/MohFarrah" target="_blank" class="inline-link">View projects →</a>
+                    </div>
+                    <div>
+                        <p class="list-title">LinkedIn</p>
+                        <a href="https://www.linkedin.com/in/mohammadfarrah/" target="_blank" class="inline-link">Connect →</a>
+                    </div>
+                    <div>
+                        <p class="list-title">Resume</p>
+                        <a href="assets/Mohammad_Resume.pdf" target="_blank" class="inline-link">Download PDF →</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card quote-card">
+                <h3>Quote of the Day</h3>
+                <p class="quote-text">"To enjoy life, we must touch much of it lightly." – Voltaire</p>
+                <p class="quote-meta">
+                    <span id="quote-date"></span>
+                </p>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© Mohammad Farrah</p>
+        </footer>
     </div>
 
-    <nav class="nav">
-        <div class="container">
-            <div class="nav-content">
-                <div class="logo">Portfolio</div>
-                <div class="nav-links">
-                    <a href="#hero">Home</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#skills">Skills</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <main>
-        <section id="hero" class="hero">
-            <div class="hero-content">
-                <div class="hero-grid">
-                    <div class="hero-left">
-                        <div class="profile-image">
-                            <img src="PImags\pfp.jpeg" alt="Mohammad Farrah" class="profile-photo">
-                        </div>
-                        <h1>Mohammad Farrah</h1>
-                    </div>
-                    <div class="hero-right">
-                        <p class="subtitle">Software Engineer</p>
-                        <div class="typewriter">
-                            <p>I am a passionate software engineer excited for creating innovative 
-                                software solutions and building scalable sustanable systems.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="projects">
-            <div class="projects-container">
-                <h2>Personal Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <img src="PImags\DungeonAdventure.png" alt="Project Image" class="project-image">
-                        <div class="project-content">
-                            <h3>Dungeon Adventure</h3>
-                            <p>A simple dungeon adventure game built in Python using PyGame and SQLite as a team of 3 as university junior project.</p>
-                            <div class="project-languages">
-                                <span class="language-tag">Python</span>
-                                <span class="language-tag">PyGame</span>
-                                <span class="language-tag">SQLite</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/MohFarrah/Dungeon-Adventure">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="PImags\BeitAlCode.png" alt="Project Image" class="project-image">
-                        <div class="project-content">
-                            <h3>Beit-Al-Code</h3>
-                            <p>A full-stack online store for selling web development courses that help students to learn
-                                 the basics within a short time period.</p>
-                            <div class="project-languages">
-                                <span class="language-tag">JavaScript</span>
-                                <span class="language-tag">Node.js</span>
-                                <span class="language-tag">PayPal API</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://beitalcode.com/">Live Demo</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="PImags\SalamHack.png" alt="Project Image" class="project-image">
-                        <div class="project-content">
-                            <h3>Medical Chatbot</h3>
-                            <p>A full-stack medical chatbot built during a hackathon that uses natural language processing to
-                                 interact with patients, collect information about their symptoms, and send that data with a
-                                  basic diagnosis to the doctor to reduce waiting time for patients in clinics and hospitals.</p>
-                            <div class="project-languages">
-                                <span class="language-tag">Python</span>
-                                <span class="language-tag">JavaScript</span>
-                                <span class="language-tag">SQLite</span>
-                                <span class="language-tag">OpenAI API</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/MohFarrah/SalamHack">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="PImags\Chess.png" alt="Project Image" class="project-image">
-                        <div class="project-content">
-                            <h3>Chess</h3>
-                            <p>A simple chess game that allows two players to play against each other fully implemented in Java as a team of 4 as college freshman.</p>
-                            <div class="project-languages">
-                                <span class="language-tag">Java</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/MohFarrah/Chess">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="PImags\Portfolio.png" alt="Project Image" class="project-image">
-                        <div class="project-content">
-                            <h3>Portfolio</h3>
-                            <p>A front end personal portfolio website built compleatly using AI tools with some tweaks into the React
-                                by hand.
-                            </p>
-                            <div class="project-languages">
-                                <span class="language-tag">ChatGPT</span>
-                                <span class="language-tag">Cursor Composer</span>
-                                <span class="language-tag">React</span>
-                                <span class="language-tag">JavaScript</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/MohFarrah/">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="skills">
-            <h2>Technical Skills</h2>
-            <div class="skills-container">
-                <div class="skills-track">
-                    <div class="skill-item">
-                        <img src="Icons/js.png" alt="JavaScript" class="skill-icon">
-                    </div>
-                    <div class="skill-item">
-                        <img src="Icons/java.png" alt="Java" class="skill-icon">
-                    </div>
-                    <div class="skill-item">
-                        <img src="Icons/python.png" alt="Python" class="skill-icon">
-                    </div>
-                    <div class="skill-item">
-                        <img src="Icons/letter-c.png" alt="C" class="skill-icon">
-                    </div>
-                    <div class="skill-item">
-                        <img src="Icons/nodejs.png" alt="Node.js" class="skill-icon">
-                    </div>
-                    <div class="skill-item">
-                        <img src="Icons/r.png" alt="R" class="skill-icon">
-                    </div>
-                    <div class="skill-item">
-                        <img src="Icons/github.png" alt="JavaScript" class="skill-icon">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="experience">
-            <div class="container">
-                <h2>Experience</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot" title="Computer Science SI Leader">2022</div>
-                        <div class="timeline-content">
-                            <h3>Computer Science Supplemental Instructor</h3>
-                            <div class="company">Tacoma Community College | Tacoma, WA</div>
-                            <div class="date">September 2022 - June 2024</div>
-                            <p>• Led Java coding review sessions; focused on OOP, debugging, and coding architecture.<br>
-                               • Collaborated with faculty to support students with great customer service increasing engagement.<br>
-                               • Facilitated workshops for 10-30 students, emphasizing problem-solving and coding skills.<br>
-                               • Received training in conflict resolution, leadership, and equitable teaching strategies.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot" title="Web Application Internship">2024</div>
-                        <div class="timeline-content">
-                            <h3>Software Development Engineer Intern</h3>
-                            <div class="company">Exchveng | Los Angeles, CA (Remote)</div>
-                            <div class="date">March 2024 - June 2024</div>
-                            <p>• Developed a social video automation tool using Next.js, Firebase Auth, and third-party APIs.<br>
-                               • Improved user experience by handling complex multi-platform media upload workflows.<br>
-                               • Worked in a fast-paced agile environment with weekly code reviews and sprint retrospectives.<br>
-                               • Handled authentication, routing, and UI state with Redux and secure API integrations.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot" title="Web Project Manager Internship">2024</div>
-                        <div class="timeline-content">
-                            <h3>Full Stack Engineer Team Lead Intern</h3>
-                            <div class="company">LameRo | Amman, Jordan (Remote)</div>
-                            <div class="date">June 2024 - Present</div>
-                            <p>• Led a product development of a React Native AI platform enabling drag-and-drop mobile apps.<br>
-                               • Integrated Supabase Authentication with secure front-end/back-end data handling.<br>
-                               • Designed and deployed scalable API Algorithms with Node.js, Express, and Supabase Functions.<br>
-                               • Managed agile sprints, led standups, and ensured CI/CD automation delivery via GitHub Actions
-                               workflows.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot" title="Web Project Manager Internship">2025</div>
-                        <div class="timeline-content">
-                            <h3>Research And Development Assistant</h3>
-                            <div class="company">Tacoma, WA, USA</div>
-                            <div class="date">June 2025 - Present</div>
-                            <p>• Built custom NLP system using Machine Learning, PyTorch, and advanced Python libraries.<br>
-                               • Applied deep learning to process syntactically and semantically rich Arabic text.<br>
-                               • Integrated OpenAI Whisper for Arabic speech-to-text to enhance data analysis accuracy.<br>
-                               • Developed React.js frontend for platform supporting NLP research and deployment.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="resume-button">
-                    <a href="assets/Mohammad_Resume.pdf" class="btn" target="_blank" rel="noopener noreferrer">View Full Resume</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>© 2025 Mohammad Farrah. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
     <script>
-        // Update copyright year
-        document.getElementById('year').textContent = new Date().getFullYear();
+        const yearEl = document.getElementById('year');
+        if (yearEl) {
+            yearEl.textContent = new Date().getFullYear();
+        }
+
+        const quoteDate = document.getElementById('quote-date');
+        if (quoteDate) {
+            const now = new Date();
+            quoteDate.textContent = now.toLocaleDateString(undefined, {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+        }
+
+        (function() {
+            var toggle = document.getElementById('theme-toggle');
+            var html = document.documentElement;
+            function applyTheme(theme) {
+                html.classList.remove('dark', 'light');
+                if (theme === 'dark') {
+                    html.classList.add('dark');
+                    if (toggle) toggle.textContent = 'Light';
+                } else {
+                    html.classList.add('light');
+                    if (toggle) toggle.textContent = 'Dark';
+                }
+                try { localStorage.setItem('theme', theme); } catch (e) {}
+            }
+            function init() {
+                var prefer;
+                try { prefer = localStorage.getItem('theme'); } catch (e) { prefer = null; }
+                if (prefer === 'dark' || prefer === 'light') {
+                    applyTheme(prefer);
+                } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    applyTheme('dark');
+                } else {
+                    applyTheme('light');
+                }
+            }
+            init();
+            if (toggle) {
+                toggle.addEventListener('click', function() {
+                    applyTheme(html.classList.contains('dark') ? 'light' : 'dark');
+                });
+            }
+        })();
     </script>
 </body>
-
 </html> 
-
