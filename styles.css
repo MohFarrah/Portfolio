@@ -67,7 +67,15 @@ html.light {
 }
 
 html {
-    overflow: hidden;
+    /* Allow scrolling but hide default scrollbars */
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* IE and old Edge */
+    scrollbar-width: none;    /* Firefox */
+}
+
+html::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 body {
@@ -75,7 +83,6 @@ body {
     line-height: 1.6;
     color: var(--text-strong);
     background-color: var(--bg-page);
-    overflow: hidden;
 }
 
 .page-shell {
@@ -336,6 +343,24 @@ body {
     font-size: 0.78rem;
     color: var(--text-muted);
     border: 1px solid var(--border-subtle);
+    cursor: default;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    transition: transform 0.16s ease-out, box-shadow 0.16s ease-out, background-color 0.16s ease-out, border-color 0.16s ease-out;
+}
+
+.skills-card .pill-tag {
+    background: rgba(148, 163, 184, 0.12);
+    border-color: rgba(148, 163, 184, 0.28);
+}
+
+.skills-card .pill-tag:hover {
+    transform: translateY(-1px) scale(1.02);
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
+    background-color: rgba(148, 163, 184, 0.18);
+    border-color: rgba(148, 163, 184, 0.35);
 }
 
 .inline-link {
